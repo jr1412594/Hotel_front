@@ -13,6 +13,7 @@ header {
 img {
     height: 75%;
     width: 100%;
+    overflow: hidden;
 }
 
 .property-container {
@@ -90,6 +91,21 @@ img {
     right: 1%;
 
 }
+
+aside {
+    width: 20%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+}
+
+aside {
+    margin: .1rem;
+}
+
 
 li {list-style-type: none;}
 body {font-family: Verdana, sans-serif;} 
