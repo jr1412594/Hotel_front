@@ -1,4 +1,4 @@
-body, .div-container {
+body {
     height: 100%;
     width: 100%;
     background-color: rgb(50, 108, 216);
@@ -6,9 +6,10 @@ body, .div-container {
     flex-direction: column;
 } 
 
-/* header {
+header {
     background-color: hsl(202, 111%, 41%);
-} */
+} 
+
 img {
     height: 100%;
     width: 100%;
@@ -16,7 +17,8 @@ img {
 
 .property-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+
 }
 
 
@@ -61,6 +63,7 @@ img {
 }
 
 .flip-card-back {
+    position: relative;
     background-color: cadetblue;
     height: 100%;
     width: 100%;
@@ -72,64 +75,64 @@ img {
     cursor: pointer;
 }
 
-/* ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;} */
+li {list-style-type: none;}
+body {font-family: Verdana, sans-serif;} 
 
-/* Month header */
-/* .month {
+ /* Month header  */
+.month {
   padding: 70px 25px;
   width: 100%;
   background: #25138a;
   text-align: center;
-} */
+} 
 
 /* Month list */
-/* .month ul {
+.month ul {
   margin: 0;
   padding: 0;
-} */
+} 
 
-/* .month ul li { */
-  /* color: white;
+.month ul li { 
+  color: white;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-} */
+} 
 
 /* Previous button inside month header */
-/* .month .prev {
+.month .prev {
   float: left;
   padding-top: 10px;
-} */
+}
 
 /* Next button */
-/* .month .next {
+.month .next {
   float: right;
   padding-top: 10px;
-} */
+} 
 
 /* Weekdays (Mon-Sun) */
-/* .weekdays {
+.weekdays {
   margin: 0;
   padding: 10px 0;
   background-color:#ddd;
-} */
-/* 
+} 
+
 .weekdays li {
   display: inline-block;
   width: 13.6%;
   color: #666;
   text-align: center;
-} */
+} 
 
 /* Days (1-31) */
-/* .days {
+.days {
   padding: 10px 0;
   background: #eee;
   margin: 0;
-} */
+} 
 
-/* .days li {
+.days li {
   list-style-type: none;
   display: inline-block;
   width: 13.6%;
@@ -137,11 +140,11 @@ body {font-family: Verdana, sans-serif;} */
   margin-bottom: 5px;
   font-size:12px;
   color: #777;
-} */
+} 
 
 /* Highlight the "current" day */
-/* .days li .active {
+.days li .active {
   padding: 5px;
   background: #1abc9c;
   color: white !important
-} */
+} 
