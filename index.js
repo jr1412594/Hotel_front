@@ -4,7 +4,7 @@ const guestURL = `${baseURL}/guests`
 const reservationURL = `${baseURL}/reservations`
 
 const propertyContainer = document.querySelector('.property-container')
-const divContainer = document.querySelector('.div-container')
+
 
 fetch(propertyURL)
 .then(parseJSON)
@@ -28,7 +28,7 @@ function displayProperties(property){
     const flipCardBack = document.createElement('div')
     flipCardBack.className = 'flip-card-back'
     const backCardDescription = document.createElement('h3')
-    backCardDescription.textContent = 'under construction'
+    backCardDescription.textContent = property.description 
     const backButton = document.createElement('button')
     backButton.textContent = "Select Dates"
     backButton.className = 'backButton'
@@ -37,24 +37,24 @@ function displayProperties(property){
         console.log(event.target, 'clicked')
     })
 
-    flipCardBack.append(backCardDescription, backButton)
-
-
+    
+    
     const propertyName = document.createElement('h2')
     propertyName.textContent = property.name
-
+    
     const propertyImage = document.createElement('img')
     propertyImage.src = property.image
-
+    
     const propertyPrice = document.createElement('h3')
     propertyPrice.textContent = `$ ${property.price}`
-
-    flipCardFront.append(propertyImage)
+    
+    flipCardBack.append(backCardDescription, propertyPrice, backButton)
+    flipCardFront.append(propertyName, propertyImage)
     flipCardInner.append(flipCardFront, flipCardBack)
     flipCard.append(flipCardInner)
 
-    propertyContainer.append(propertyName, flipCard, propertyPrice)
-    divContainer.appendChild(propertyContainer)
+    propertyContainer.append(flipCard)
+
 }
 
 function parseJSON(response) {
