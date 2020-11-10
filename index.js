@@ -46,6 +46,7 @@ function displayProperties(property){
     propertyImage.src = property.image
     
     const propertyPrice = document.createElement('h3')
+    propertyPrice.className = 'prop-price'
     propertyPrice.textContent = `$ ${property.price}`
     
     flipCardBack.append(backCardDescription, propertyPrice, backButton)
