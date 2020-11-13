@@ -22,18 +22,24 @@ img {
     overflow: hidden;
 }
 
-.res-day {
+.res-day, .mod-button {
     border: thick double #32a1ce;
+}
+
+.mod-button {
+    padding-left: 5px;
+    margin-left: 30%;
 }
 
 .property-container {
     display: flex;
     flex-flow: row wrap;
     border: black;
-    margin: 1rem;
-    margin-bottom: 1rem;
+    margin: 2.3rem;
+    margin-bottom: 2rem;
 
 }
+
 
 
 .flip-card {
@@ -81,7 +87,7 @@ img {
     background-color: hsl(203, 138%, 58%);
     height: 100%;
     width: 100%;
-    color: black;
+    color: hsl(203, 88%, 5%);
 }
 
 .flip-card-back {
@@ -89,7 +95,7 @@ img {
     background-color: hsl(203, 138%, 58%);
     height: 100%;
     width: 100%;
-    color: whitesmoke;
+    color:hsl(203, 88%, 5%);
     transform: rotateY(180deg);
 }
 
@@ -100,6 +106,9 @@ img {
     bottom: 2%;
     left: 2%;
 }
+h2 {
+    border-radius: 1% 1% 1% 1%;
+}
 
 .prop-price {
     color: hsl(203, 103%, 18%);
@@ -109,8 +118,8 @@ img {
 
 }
 
-aside {
-    width: 20%;
+aside{
+    width: 18%;
     padding-left: .5rem;
     margin-left: .5rem;
     float: right;
@@ -126,8 +135,38 @@ aside {
 
 }
 
+#btn-primary, .res-button {
+    background-color: hsl(203, 138%, 58%);
+    color: hsl(203, 88%, 5%);
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    
+}
+
+#btn-primary-in {
+    width: 8rem;
+    border-radius: 2px;
+    border-width: 1px;
+    border-color: black;
+}
+
+.res-button {
+    margin-top: 1rem;
+}
+
+
 aside {
     margin: .1rem;
+}
+
+.modal-body{
+    background-color:hsl(203, 138%, 58%)
+    
+}
+
+.modal-header, .modal-footer {
+    background-color: hsl(202, 111%, 41%);
 }
 
 
@@ -143,6 +182,7 @@ body {font-family: Verdana, sans-serif;}
   color: hsl(202, 11%, 141%);
   text-align: center;
   font-weight: bolder;
+  border-radius: 1% 1% 0% 0%;
 } 
 .month-button {
     width: 2rem;
@@ -154,6 +194,8 @@ body {font-family: Verdana, sans-serif;}
   margin: 0;
   padding: 5px 0;
   background-color:hsl(203, 138%, 58%);
+  border-color: red;
+  border-width: 5rem;
 } 
 
 .weekdays li {
@@ -161,6 +203,7 @@ body {font-family: Verdana, sans-serif;}
   width: 13%;
   color: hsl(203, 103%, 18%);
   text-align: center;
+  
 } 
 
 /* Days (1-31) */
@@ -186,6 +229,6 @@ body {font-family: Verdana, sans-serif;}
 /* Highlight the "current" day */
 .days li .active {
   /* padding: 5px; */
-  background: #1abc9c;
+  background: hsl(203, 138%, 58%);
   color: white !important
 } 

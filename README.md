@@ -14,7 +14,7 @@
 
 ## Demo Video
 
-[Staycation Station](https:get a demo set up for this)////////////
+[Staycation Station](https://www.loom.com/share/9362d13a52d048adb8818cd35010c8ad)
 
 ## Getting Started
 * 1. Go to https://github.com/jr1412594/hotel_backend and clone down the repo

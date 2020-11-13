@@ -9,6 +9,10 @@ const arrivalInfo = document.querySelector('.arrival-info')
 const departureInfo = document.querySelector('.departure-info')
 const propertyInfo = document.querySelector('.property-info')
 const single = document.querySelector('.single')
+const buttonPrimary = document.querySelector('#btn-primary')
+
+asideContainer.append(buttonPrimary)
+
 fetch(propertyURL)
 .then(parseJSON)
 .then(renderProperties)
@@ -21,6 +25,7 @@ function displayProperties(property){
     const flipCard = document.createElement('div')
     flipCard.className = 'flip-card'
     
+
     const flipCardInner = document.createElement('div')
     flipCardInner.className = 'flip-card-inner'
     
