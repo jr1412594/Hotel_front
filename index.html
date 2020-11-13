@@ -10,7 +10,7 @@
     </head>
     <body>
         <header> 
-            <h1>Hotel Motel Holiday Inn</h1>
+            <h1>Staycation Station</h1>
         </header>
        
 
@@ -18,14 +18,19 @@
 
             <aside>
                 <form class="reservation-dates">
-                    <input id="checkin" type="text" name="checkin-date" placeholder="Checkin Date">
-                    <label for="checkin">Checkin Date</label>
-                    <input id="checkout" type="text" name="checkout-date" placeholder="Checkout Date">
-                    <label for="checkin">Checkout Date</label>
+                    <input class="res-day" id="checkin" type="text" name="checkin-date" placeholder="Selecet Checkin Date">
+                    <label for="checkin">Arrival</label>
+                    <input class="res-day" id="checkout" type="text" name="checkout-date" placeholder="Select Checkout Date">
+                    <label for="checkin">Departure</label>
                     <p>Your stay dates at</p>
-                    <input id="property-stay" type="text">
-                    <input type="submit">
+                    <input class="res-day" id="property-stay" type="text" name="property" placeholder="Property">
+                    <input type="submit" value="Reserve">
                 </form>
+                <br>
+                <p>Reservation set:</p>
+                <p class='arrival-info'></p>
+                <p class='departure-info'></p>
+                <p class='property-info'></p>
             </aside>
             <div class="property-container"></div>
         </section>
