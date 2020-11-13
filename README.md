@@ -1,4 +1,4 @@
-# Hotel_front
+# Staycation Station App
 
 >The alternative to the other Third party guys
 
@@ -28,14 +28,15 @@
 
 ## About
 
-The Staycation Station app is designed to help you search for a place to rest your head when you have spend a little too much time coranitining. Avoid crowded planes and literails by staying closer to home using the Staycation Station app.  
+The Staycation Station app is designed to help you search for a place to rest your head when you have spent a little too much time quarantining. Avoid crowded planes and light-rails by staying closer to home using the Staycation Station app.  
 
 ## Features
 
 * Look at various hotel rooms based on location.
 * Hoover over the image to see a calendar and price.
-* Select checkin and checkout dates for desired property
+* Select check-in and checkout dates for desired property
 * Reserve the room and see a generated reservation
+* Enter your information for a confirmation email
 
 
 ## Tech
@@ -43,7 +44,7 @@ The Staycation Station app is designed to help you search for a place to rest yo
 * Rails 6.0.3
 * sqlite3 1.4
 * rack-cors
-* Javacript
+* JavaScript
 * HTML
 * CSS
 
